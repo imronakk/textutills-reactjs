@@ -60,16 +60,16 @@ export default function TextForm(prop) {
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-1" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary mx-1" onClick={handlePunckClick}>
+        <button className="btn btn-primary mx-1 my-1" onClick={handlePunckClick}>
           Remove to puncs
         </button>
-        <button className="btn btn-primary mx-1" onClick={handleClearClick}>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>
           Clear Text
         </button>
       </div>

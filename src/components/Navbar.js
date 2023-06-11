@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Navbar(prop) {
+  
   return (
     <>
       <nav
@@ -10,12 +11,12 @@ export default function Navbar(prop) {
         style={prop.mode === 'green' ? { backgroundColor: 'rgb(73 106 79)' } : prop.mode === 'blue' ? { backgroundColor: '#1b1b30' } : {}}
       >
         <div className="container-fluid">
-          {/* <Link className={` navbar-brand ${prop.mode === 'blue' ? 'text-light' : ''}`} to="/">
+          <Link className={` navbar-brand ${prop.mode === 'blue' ? 'text-light' : ''}`} to="/">
             {prop.title}
-          </Link> */}
-          <a className={` navbar-brand ${prop.mode === 'blue' ? 'text-light' : ''}`} href="">
+          </Link>
+          {/* <a className={` navbar-brand ${prop.mode === 'blue' ? 'text-light' : ''}`} href="">
             {prop.title}
-          </a>
+          </a> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -30,20 +31,20 @@ export default function Navbar(prop) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className={`nav-link active ${prop.mode === 'blue' ? 'text-light' : ''}`} aria-current="page" href="">
+                {/* <a className={`nav-link active ${prop.mode === 'blue' ? 'text-light' : ''}`} aria-current="page" href="">
                   Home
-                </a>
-                {/* <Link className={`nav-link active ${prop.mode === 'blue' ? 'text-light' : ''}`} aria-current="page" to="/">
+                </a> */}
+                <Link className={`nav-link active ${prop.mode === 'blue' ? 'text-light' : ''}`} aria-current="page" to="/">
                   Home
-                </Link> */}
+                </Link>
               </li>
               <li className="nav-item">
                 {/* <a className={`nav-link ${prop.mode === 'blue' ? 'text-light' : ''}`} href="/about">
                   About
                 </a> */}
-                {/* <Link className={`nav-link ${prop.mode === 'blue' ? 'text-light' : ''}`} to="/about">
+                <Link className={`nav-link ${prop.mode === 'blue' ? 'text-light' : ''}`} to="/about">
                   About
-                </Link> */}
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
